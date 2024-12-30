@@ -40,12 +40,13 @@ def submit_expense():
     category = category_entry.get()
     description = description_entry.get()
     amount = amount_entry.get()
+    print(f"Amount entered: {amount}")
 
     # Validate inputs
     try:
         if not date:
             date = str(datetime.date.today())  # Default to today's date
-        str(amount)  # Check if amount is numeric
+        float(amount)  # Check if amount is numeric
         if float(amount) <= 0:
             raise ValueError("Amount must be positive.")
     except ValueError as e:
