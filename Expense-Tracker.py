@@ -8,24 +8,25 @@ import os
 root = tk.Tk()
 root.title("Expense Tracker")
 root.geometry("400x400")  # Set the window size
+root.config(bg="#ffed46") #setting colors
 
 # Global list to store expenses in memory (optional)
 expenses = []
 
 # Create input fields
-tk.Label(root, text="Date (YYYY-MM-DD):").pack()
+tk.Label(root, text="Date (MM-DD-YYYY):", bg="#9e914a").pack()
 date_entry = tk.Entry(root, width=30)
 date_entry.pack()
 
-tk.Label(root, text="Category:").pack()
+tk.Label(root, text="Category:", bg="#9e914a").pack()
 category_entry = tk.Entry(root, width=30)
 category_entry.pack()
 
-tk.Label(root, text="Description:").pack()
+tk.Label(root, text="Description:", bg="#9e914a").pack()
 description_entry = tk.Entry(root, width=30)
 description_entry.pack()
 
-tk.Label(root, text="Amount:").pack()
+tk.Label(root, text="Amount:", bg="#9e914a").pack()
 amount_entry = tk.Entry(root, width=30)
 amount_entry.pack()
 
