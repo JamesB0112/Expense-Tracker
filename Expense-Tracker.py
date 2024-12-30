@@ -45,7 +45,7 @@ def submit_expense():
     try:
         if not date:
             date = str(datetime.date.today())  # Default to today's date
-        float(amount)  # Check if amount is numeric
+        str(amount)  # Check if amount is numeric
         if float(amount) <= 0:
             raise ValueError("Amount must be positive.")
     except ValueError as e:
