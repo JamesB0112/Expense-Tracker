@@ -7,7 +7,7 @@ import os
 # Main application window
 root = tk.Tk()
 root.title("Expense Tracker")
-root.geometry("400x400")  # Set the window size
+root.geometry("500x500")  # Set the window size
 root.config(bg="#ffed46") #setting colors
 
 # Global list to store expenses in memory (optional)
