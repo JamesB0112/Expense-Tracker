@@ -1,5 +1,5 @@
 # Expense-Tracker
-GUI-based application to track and manage expenses
+GUI-based application to track and manage expenses. Still being worked on right now.
 
 ## Features
 Add and save expenses (date, category, description, amount).
