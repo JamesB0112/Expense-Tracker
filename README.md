@@ -9,6 +9,8 @@ Persistent storage using CSV
 ## Technologies Used
 Python
 Tkinter
+SQL
+PostgreSQL
 
 ## Future Improvements
 Add data visualization for spending trends.
