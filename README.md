@@ -16,3 +16,4 @@ PostgreSQL
 Add data visualization for spending trends.
 Integrate a database for better storage.
 Create possible negative values for payment.
+Cleaning up the code.
