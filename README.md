@@ -33,31 +33,36 @@ The SQL analysis explores spending patterns using ten analytical queries, includ
 - Percentage of total spending by category
 - Highest expense within each category
 - Expenses above their category average
-- Highest-spending category for each month
+- Highest-spending category each month
 - Month-over-month spending changes
 - Combined category-level spending insights
 
 The analysis uses SQL concepts such as `GROUP BY`, aggregate functions, common table expressions (CTEs), window functions, `LAG()`, and ranking functions.
 
+**SQL script:** [`expense_tracker_analysis.sql`](./expense_tracker_analysis.sql)
+
 ## Power BI Dashboard
 
-The Power BI dashboard presents spending data through interactive visualizations, including:
+An interactive dashboard built with Power BI to analyze spending patterns across 49 transactions from January through July 2026.
 
+Dashboard highlights:
 - Total spending, transaction count, and average expense KPI cards
 - Monthly spending trends
 - Spending by category
 - Monthly spending by category
-- Month and category slicers for interactive filtering
+- Interactive month and category filters
 
-**Dataset note:** The Power BI dashboard uses a separate dataset containing 49 expense transactions from January through July 2026. Its results are analyzed independently from the data used by the Python application.
+**Dashboard file:** [`Expense_Tracker.pbix`](./Expense_Tracker.pbix)
+
+**Dataset note:** The Power BI dashboard uses a separate dataset from the Python application's expense records. Its results are analyzed independently.
 
 ## Key Findings
 
-- Total spending in the Power BI dataset was approximately **$11,896.82**.
-- The dataset contained **49 transactions**.
-- The average transaction amount was approximately **$242.79**.
-- Rent was the highest-spending category.
-- April was the highest-spending month.
+- **Total spending:** Approximately $11,896.82
+- **Transactions:** 49
+- **Average transaction:** Approximately $242.79
+- **Highest-spending category:** Rent
+- **Highest-spending month:** April 2026
 
 ## What I Learned
 
@@ -67,7 +72,7 @@ Through this project, I developed practical experience with:
 - Connecting Python to a PostgreSQL database
 - Validating and storing structured data
 - Writing SQL queries to answer analytical questions
-- Using CTEs and window functions for more advanced analysis
+- Using CTEs and window functions for advanced analysis
 - Designing an interactive Power BI dashboard
 - Translating spending data into meaningful business insights
 
